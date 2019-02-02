@@ -43,6 +43,6 @@ The background colour of the particle canvas.
 Takes an object with x and y, this is the distance the particles will move in that direction each frame.  
 
 ## To Do
-* Add more particle types
+* Add more particle types (images should be available)
 * Add variance for direction
 * Gradients of colour
