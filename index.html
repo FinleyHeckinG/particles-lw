@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="renderCanvas">
+        <h1 id="title">Lightweight Particles</h1>
+    </div>
+</body>
+<style>
+    #title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        color: white;
+        font-size: 10vmin;
+        user-select: none;
+    }
+    #renderCanvas{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0vh;
+        left: 0;
+    }
+</style>
+<script src="js/particles-lw.min.js"></script>
+<script>
+new particleArea({
+        root: "renderCanvas",
+        type: "circle",
+        amount: 80,
+        size: 10,
+        variance: 6,
+        colour: ["purple", "white", "white"],
+        background: "rgb(20,20,40)",
+        force: {
+            x: 0.7,
+            y: 0.5
+        }
+    }
+);
+</script>
+</html>
