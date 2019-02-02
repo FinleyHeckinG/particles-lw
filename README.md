@@ -19,7 +19,7 @@ new particleArea({
 ```
 
 #### Root
-Root is the element you want the canvas to be rendered to, the canvas will automatically fill out the size of this element.  
+Root is the id of the element you want the canvas to be rendered to, the canvas will automatically fill out the size of this element.  
 
 #### Type
 Available types are currently `"circle"` and `"square"`. It will change how the particle looks.  
